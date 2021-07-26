@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+}
+
+#heading {
+    font-family: 'Blackadder ITC';
+    font-size: 75px;
+    margin: 30px;
+    padding-top: 25px;
+}
+
+.container {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#numberOfUsers {
+    padding: 20px;
+    height: 30px;
+    width: 400px;
+    font-size: medium;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#btn {
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#content-1 {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.userDisplay {
+    color: white;
+    padding: 10px;
+    border: 1px solid;
+    margin: 5px;
+    min-height: 450px;
+    width: 350px;
+}
+
+.userImage {
+    height: 300px;
+    width: 300px;
+}
+
+.name {
+    text-align: center;
+    color: aqua;
+}
+
+.gender {
+    text-align: center;
+    color: palevioletred;
+    text-transform: uppercase;
+}
+
+.email {
+    text-align: center;
+}
+
+.phone {
+    text-align: center;
+    color: yellowgreen;
+}
