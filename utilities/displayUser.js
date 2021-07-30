@@ -8,8 +8,7 @@ export const createTemplate = (customUser) => {
     gender.innerHTML = "Gender : " + customUser.gender;
     const email = document.createElement('h3');
     email.className = "email";
-    email.innerHTML = "Email : " +
-        customUser.email;
+    email.innerHTML = "Email : " + customUser.email;
     const name = document.createElement('h2');
     name.className = "name";
     name.innerHTML = customUser.name.title + " " + customUser.name.first + " " + customUser.name.last;
@@ -28,10 +27,16 @@ export const createTemplate = (customUser) => {
 }
 
 export const displayUser = (userValue) => {
-    const userList = document.getElementById('content-1');
-    userList.innerHTML = "";
-    console.log(userList.innerHTML);
-    userValue.forEach((userInfo) => {
-        userList.appendChild(createTemplate(userInfo));
-    });
+    if (userValue !== "There's an Error") {
+        try {
+            const userList = document.getElementById('content-1');
+            userList.innerHTML = "";
+            console.log(userList.innerHTML);
+            userValue.forEach((userInfo) => {
+                userList.appendChild(createTemplate(userInfo));
+            });
+        } catch (error) {
+            console.log("Error caught");
+        }
+    }
 };
